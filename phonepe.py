@@ -570,7 +570,7 @@ def ques10():
     fig_app=px.pie(Total_map_user_3,
                     names="State",
                     values="AppOpens",
-                    title=f"<span style='color:#f505e5'>Top 10 State of App Opens </span>",
+                    title=f"<span style='color:#f505e5'>Top 10 State of App Opens in MAP_Users </span>",
                     color_discrete_sequence= px.colors.sequential.Bluered_r,
                     hole=0.5
                     )
@@ -584,7 +584,7 @@ def ques11():
     fig_app=px.pie(Total_map_user_3,
                     names="District",
                     values="AppOpens",
-                    title=f"<span style='color:#f505e5'>Top 10 District of App Opens </span>",
+                    title=f"<span style='color:#f505e5'>Top 10 District of App Opens in MAP_Users </span>",
                     color_discrete_sequence= px.colors.sequential.algae_r,
                     hole=0.5
                     )
@@ -780,8 +780,8 @@ class TopChartspage:
                                               "Top 10 District of Transaction_amount in MAP_transaction",
                                               "Top 10 State of Registered Users in MAP_Users",
                                               "Top 10 District of Registered Users in MAP_Users",
-                                              "Top 10 State of App Opens ",
-                                              "Top 10 District of App Opens"))
+                                              "Top 10 State of App Opens in MAP_Users ",
+                                              "Top 10 District of App Opens in MAP_Users"))
         if ques=="Top Brands of Mobile Used":
             ques1()
         elif ques=="Top 10 State of Transaction_amount in aggr_insurance":
@@ -800,10 +800,10 @@ class TopChartspage:
             ques8()
         elif ques=="Top 10 District of Registered Users in MAP_Users":
             ques9()
-        elif ques=="Top 10 State of App Opens":
+        elif ques=="Top 10 State of App Opens in MAP_Users":
             ques10()
-        elif ques=="Top 10 District of App Opens":
-            ques10()
+        elif ques=="Top 10 District of App Opens in MAP_Users":
+            ques11()
 
         # Add more logic for data exploration
 
